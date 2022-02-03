@@ -54,16 +54,21 @@ body {
 }
 
 figure {
-  display: flex;
-  flex-direction: row;
+  display: grid;
 }
 
 figcaption {
-  display: none;
+  /* display: none; */
+  grid-row: 1;
+  grid-column: 1;
+  color: whitesmoke;
+  font-size: 2rem;
 }
 
 img {
   width: 100%;
+  grid-row: 1;
+  grid-column: 1;
   height: auto;
   object-fit: cover;
 }
@@ -104,4 +109,8 @@ footer {
 .fig-rec {
   height: 70%;
   object-fit: cover;
+}
+
+.cap-end {
+  align-self: end;
 }
