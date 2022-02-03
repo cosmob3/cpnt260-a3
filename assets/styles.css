@@ -1,15 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .gallery-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat( auto-fit, minmax(500px, 1fr) );
   gap: 2rem;
-  align-items: end;
-
+  align-items: center;
  }
+
+ body {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  }
+
+
+body {
+  background-color: black;
+}
+
+header {
+  color:blanchedalmond;
+}
 
 figure {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
   max-width: 100%;
 }
 
@@ -21,12 +40,16 @@ img {
   width: 100%;
   height: auto;
   object-fit: cover;
-
 }
+
+body {
+  background-color: black;
+}
+
 .fig-portrait {
   grid-row-start: span 2;
-  height: 100%;
-  align-items: flex-start;
+  align-items: center;
+  margin: 0rem; 
 }
 .fig-landscape {
   grid-column-start: span 3;
@@ -37,4 +60,10 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+}
+
+.fig-rec {
+  height: 70%;
+  object-fit: cover;
 }
