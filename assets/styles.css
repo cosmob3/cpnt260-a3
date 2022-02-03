@@ -1,0 +1,41 @@
+.gallery-container {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, maxmin (400px, 1fr));
+  */
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 90vw;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 60rem;
+}
+
+figcaption {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.fig-portrait {
+  grid-row-start: span 1;
+  
+}
+
+.fig-landscape {
+  grid-auto-columns: span 2;
+  width: auto;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
